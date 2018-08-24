@@ -1,0 +1,40 @@
+<div class="background">
+
+    <!--top-->
+      <div class="material-masthead-login">
+        <div class="material-inner-masthead">
+          To add a logo image comment in code within login component
+          <!-- this can be passed in dynamically through the router as well... -->
+          <!-- <img src="logo route here" class="logo-max"> -->
+        </div>
+      </div>
+  
+      <div class="login-flex" style="float: right;">
+        <div class="login-box">
+          <form (ngSubmit)="login()" #loginForm="ngForm" class="login-form" id="loginme">
+            <div class="input-container">
+              <mat-form-field color="primary">
+                <input matInput type="text" id="username" required [(ngModel)]="username" name="username" placeholder="Username">
+              </mat-form-field>
+              <mat-form-field color="primary">
+                <input matInput type="password" id="password" required [(ngModel)]="password" (ngModelChange)="inputChanged($event)" placeholder="Password"
+                  name="password">
+              </mat-form-field>
+            </div>
+            <div class="login-btn-container">
+              <button mat-raised-button class="login-btn" [ngClass]="{'valid': loginForm.form.valid}" type="submit" [disabled]="!loginForm.form.valid"
+                id="login-button">
+                <span class="mat-button-wrapper">Login</span>
+                <div class="mat-button-ripple mat-ripple">
+                </div>
+                <div class="mat-button-focus-overlay">
+                </div>
+              </button>
+            </div>
+          </form>
+          <span class="login-credentials-error" *ngIf="loginFailed">Invalid credentials, please try again</span>
+        </div>
+      </div>
+    <!-- </div> -->
+  </div>
+  

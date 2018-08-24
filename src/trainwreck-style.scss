@@ -1,0 +1,42 @@
+/* https://material.angular.io/guide/theming#defining-a-custom-theme */
+/* https://github.com/angular/material2/blob/master/src/lib/core/theming/_theming.scss */
+@import '~@angular/material/theming';
+@import './material-colors';
+@include mat-core();
+
+$theme: mat-light-theme($primary, $accent, $warn);
+@include angular-material-theme($theme);
+
+/*
+** Checkboxes and Radio buttons use the accent color by default
+** so switch the primary and accent colors to let the default be primary
+*/
+$switcharoo: mat-light-theme($accent, $primary, $warn);
+@include mat-checkbox-theme($switcharoo);
+@include mat-radio-theme($switcharoo);
+
+/* https://google.github.io/material-design-icons/#getting-icons */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }

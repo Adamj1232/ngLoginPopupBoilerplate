@@ -1,0 +1,51 @@
+@import '~@angular/material/theming';
+
+@import 'src/material-colors.scss';
+
+.browser-compatibility-title {
+  font-size: xx-large;
+  text-align: center;
+  color: mat_color($warn);
+  margin-top: 20px;
+}
+
+.browser-compatibility-body {
+  text-align: center;
+  line-height: 1.6em;
+  .user-version {
+    margin-bottom: 10px;
+  }
+}
+
+.modal-container {
+  position: relative;
+}
+
+.close-btn {
+    min-width: 40px;
+    padding: 0;
+    position: absolute;
+    right: -23px;
+    top: -23px;
+}
+
+
+.close-btn:hover {
+  background-color: none;
+i {
+    color: mat-color($warn);
+}
+}
+
+.mat-dialog-actions {
+padding: 0;
+}
+
+.dialog-body {
+margin-top: 40px;
+}
+
+// removes injected grey background from material btns in this dialog
+.close-btn ::ng-deep .mat-button-focus-overlay {
+  background-color: transparent;
+}

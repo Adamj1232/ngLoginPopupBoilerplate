@@ -1,0 +1,210 @@
+@import '~@angular/material/theming';
+
+@import 'src/material-colors.scss';
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.mat-spinner path {
+    stroke: #d4d4d4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+body {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+/* Avoid using deep */
+app-login .mat-ink-bar {
+  background-color: #233538 !important;
+}
+
+app-login .mat-input-underline {
+  border-color: #233538 !important;
+}
+
+/* List Style Types */
+/* Removes bullets from ul */
+.ul-li-custom {
+  list-style-type: none;
+  line-height: 1.1em;
+  font-size: 0.8em;
+  color: #424242;
+}
+
+.section-headings {
+    font-size: 2.1em;
+    font-family: 'Poppins', sans-serif;
+    color: #616161;
+    padding: 0 0 0;
+    border-bottom: solid;
+    margin: 9px 0 20px;
+    display: block;
+}
+
+.section-headings-card {
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    color: #616161;
+    padding: 0 0 10px;
+    border-bottom: solid 1px;
+    margin: 5px 0 20px;
+    display: block;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 3.2em;
+}
+
+h3 {
+    font-size: 2em;
+    line-height: 1em;
+    margin: 0 0 5px;
+}
+
+h4 {
+    font-size: 1.3em;
+    line-height: 1em;
+    margin: 0;
+}
+
+.btn {
+    background-image: none !important;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 12px !important;
+    //border-radius: 8px !important;
+    //box-shadow: 2px 2px 4px #333;
+}
+
+.button {
+    cursor: pointer;
+}
+
+// TODO is this a fix for the device config view menu/lists?
+.cdk-overlay-pane .mat-menu-panel {
+    max-height: calc(100vh - 620px);
+}
+
+
+.mat-sidenav-content {
+    height: 100vh !important;
+    // overflow: hidden !important;
+}
+
+.label {
+    font-weight: 400;
+    padding: 3px 6px !important;
+    font-size: 13px;
+}
+
+.mat-mini-fab{
+    background-color: mat-color($primary, lighter);
+}
+
+.edit-user-admin-form .mat-card-actions .mat-raised-button:first-child {
+    margin: 10px 5px 10px 15px;
+}
+
+.edit-user-admin-form .mat-card-actions .mat-raised-button {
+    color: #ffffff;
+}
+
+.self-serve-form {
+  .mat-card {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  .mat-card-actions {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+
+.edit-user-form {
+  .mat-card {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  .mat-card-actions {
+    margin-top: 20px;
+  }
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+}
+
+//questionable css that should probably be standardized, may want to change class in html file
+//in traceroute-hop
+.hop-h3 {
+    font-size: 1.8em;
+    color: #455A64;
+    font-weight: 400;
+    position: absolute;
+    left: 0;
+    padding: 5px 0 5px 10px;
+  }
+
+//in traceroute-device and iplookup-form
+.options-btn {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    font-family: Arial;
+    color: #ffffff !important;
+    font-size: 12px;
+    padding: 5px 10px;
+    border: 0;
+    text-decoration: none;
+    margin-right: 4px !important;
+}
+
+.options-btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+}
+
+//in iplookup-form
+.btn-lookup-ip {
+    position: absolute;
+    // float: right;
+    margin: -49px 0 8px 220px;
+}
+
+.login-modal-container .mat-dialog-container {
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.cdk-overlay-container .login-modal-backdrop {
+    background-color: #000;
+    opacity: .5;
+}

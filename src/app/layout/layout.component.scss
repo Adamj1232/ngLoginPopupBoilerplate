@@ -1,0 +1,114 @@
+// Import theming functions
+@import '~@angular/material/theming';
+@import '../../material-colors';
+
+/* FAB */
+.float-button {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 30px;
+  font-size: 40px;
+  position: fixed;
+  left: -32px;
+  top: 50vh;
+  z-index: 2;
+  transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+}
+
+.float-button-open {
+  left: 188px !important;
+}
+
+@media (max-width: 675px) {
+  .float-button-open {
+    left: 188px !important;
+  }
+}
+
+.float-button .mat-mini-fab {
+  padding-left: 10px;
+}
+
+.float-button-open .mat-mini-fab {
+  padding-left: 0;
+}
+
+.height-fix {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 100%;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: mat-color($primary, 700);
+  text-decoration: none;
+}
+
+.material-masthead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+  height: 100px;
+  width: 220px;
+  border-bottom: solid 4px #788;
+}
+
+.logo-fit {
+  max-width: 200px;
+  display: block;
+}
+
+.logo-custom {
+  top: 32px;
+  left: 247px;
+  display: inline-block;
+}
+
+.symphony-title {
+  color: #9e7d21;
+  font-size: 1.8em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+
+.router-container {
+  padding: 15px 15px 0 20px;
+}
+
+.footer-container {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.57);
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  left: 0px;
+}
+
+.footer-img {
+  max-width: 140px;
+  margin-top: 13px;
+  padding-left: 44px;
+}
+
+.alert-user-menu {
+  float: right;
+  margin-top: -5px;
+  display: flex;
+  align-items: center;
+}
+
+.user-menu:hover {
+  color: mat-color($primary);
+}

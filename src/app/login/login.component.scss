@@ -1,0 +1,210 @@
+@import 'src/material-colors.scss';
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 500s;
+  background-color: rgb(255, 255, 255);
+  font-size: .8em;
+  padding: 5px;
+}
+
+$masthead-height: 64px;
+.material-masthead-login {
+  background-color: transparent;
+  border-radius: 6px;
+  // background-color: #233538;
+  height: $masthead-height;
+  width: 100%;
+  // box-shadow: 0 2px 5px 0 rgba(0,0,0,0.75);
+}
+
+.material-inner-masthead {
+ padding: 15px;
+}
+
+.logo-max {
+  max-height: 64px;
+  position: absolute;
+  margin: auto;
+  padding: 250px 60px;
+}
+
+.logo-custom-login {
+  position: absolute;
+  top: 43px;
+  left: 229px;
+  
+}
+
+.symphony-version-login {
+  color: #fff;
+  z-index: 9887;
+  position: fixed;
+  font-size: 1.2em;
+  margin: 28px 0 0 163px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-h1 {
+  font-size: 2.2em;
+  color: #fff;
+  line-height: 2em;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-h2 {
+  font-size: 3em;
+  color: #BDBDBD;
+  font-weight: 300;
+  list-style-type: none;
+  line-height: 1.2em;
+}
+
+.login-h3 {
+  color: #BDBDBD;
+  font-weight: 300;
+  font-size: 1.4em;
+  list-style-type: none;
+  line-height: 1.5em;
+}
+
+.login-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - #{$masthead-height});
+  
+}
+
+$login-box-height: 270px;
+.login-box {
+  z-index: 2;
+  border-radius: 6px;
+  line-height: 2em;
+  font-size: 1.45em;
+  background-color: rgba(255, 255, 255, 0.84);//rgba(255, 255, 255, 0.31);
+  padding: 0px;
+  width: 285px;
+  height: $login-box-height;
+  display: flex;
+  padding: 0 40px 30px 0;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+  // box-shadow: 0 6px 6px -4px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-btn-container {
+  float: right;
+  padding: 20px 0 0 0;
+}
+
+.login-btn {
+  background-color: #0d4c69;
+  color: #ffffff;
+  float: right;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  .mat-button-wrapper {
+    font-size: 14px !important;
+  }
+}
+
+.login-btn.valid:hover {
+  background: rgba(220, 220, 220, .75);
+  color: #233538;
+  text-decoration: none;
+}
+
+.login-label {
+  color: #000;
+  font-size: 0.75em;
+  font-weight: 300;
+  text-decoration: none;
+  float: right;
+   margin: 10px 50px 0 0;
+  display: flex;
+}
+
+.login-credentials-error {
+  font-size: 0.65em;
+  color: #a51a1a;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 0;
+  width: 100%;
+  font-style: italic;
+  float: right;
+  display: block;
+  text-align: center;
+  // margin-top: 5px;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  // background: url("/assets/node_globe1.svg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.background-overlay {
+  // position: absolute;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(at bottom, rgba(167, 170, 196, 0.71), rgb(235, 235, 235));
+}
+
+.mat-button-wrapper {
+  font-size: 12px !important;
+}
+
+.mat-accent.mat-input-element {
+	/deep/ .mat-input-placeholder {
+		color: #a51a1a;
+	}
+  /deep/ .mat-form-field-required-marker {
+    color: #a51a1a;
+  }
+  /deep/ .mat-form-field-ripple {
+    background-color: #a51a1a;
+  }
+}
+
+.mat-input-container.ng-touched.ng-invalid {
+	/deep/ .mat-input-placeholder {
+		color: #a51a1a;
+	}
+  /deep/ .mat-form-field-required-marker {
+    color: #a51a1a;
+  }
+  /deep/ .mat-form-field-ripple {
+    background-color: #a51a1a;
+  }
+}
+
+:host /deep/ .mat-input-placeholder {
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+}

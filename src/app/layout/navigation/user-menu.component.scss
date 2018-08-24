@@ -1,0 +1,9 @@
+@import '~@angular/material/theming';
+
+@import 'src/material-colors.scss';
+
+.user-menu-icon {
+    font-size: 32px;
+    height: 32px;
+    width: 32px;
+}

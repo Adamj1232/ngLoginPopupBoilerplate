@@ -1,0 +1,71 @@
+
+input {
+  border: none !important;
+}
+
+.audit-selector {
+  display: flex;
+}
+
+.audit-section {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 30px 15px 0;
+}
+
+.front-buttons {
+  display: inline-block;
+  margin-left: 0px;
+  margin-right: 16px;
+}
+
+.section-headings {
+  font-size: 2.1em;
+  font-family: 'Poppins', sans-serif;
+  color: #616161;
+  padding: 0 0 0;
+  border-bottom: solid;
+  margin: 9px 0 20px;
+  display: block;
+}
+
+mat-card-header {
+  min-height: 80px;
+}
+
+mat-card-title {
+  font-size: 16px;
+}
+
+.audit-status {
+  text-align: center;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.audit-progress-spinner {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.progress-dots {
+  display: flex;
+}
+
+.status-value {
+  position: absolute;
+  top: 16px;
+  right: 40px;
+}
+
+.status-spinner {
+  position: relative;
+}
+
+.json-title {
+  font-weight: 600;
+  margin-left: 5px;
+  margin-right: 5px;
+}
